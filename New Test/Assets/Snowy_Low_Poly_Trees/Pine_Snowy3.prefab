@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33000011774203880}
   - component: {fileID: 23000011496022464}
   - component: {fileID: 64000012714202242}
+  - component: {fileID: 1308125686}
   m_Layer: 0
   m_Name: Pine_Snowy3
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000012936420096}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 1.5032836}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -94,3 +95,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300010, guid: e6ec39770b6dbe04f9cbd7ea19e0c7ef, type: 3}
+--- !u!136 &1308125686
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012936420096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.35
+  m_Height: 6.7772784
+  m_Direction: 1
+  m_Center: {x: 0, y: 3.2, z: 0}
