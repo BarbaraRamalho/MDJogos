@@ -9,17 +9,17 @@ public class PlayerVitals : MonoBehaviour
     private ThirdPersonCharacter charController;
     private ThirdPersonUserControl playerController;
 
-    private float maxEnergy = 100;
-    private float maxMotivation = 100;
-    private float maxTemp = 60;
+    private float maxEnergy = 100f;
+    private float maxMotivation = 100f;
+    private float maxTemp = 60f;
 
     public float energy;
     public float motivation;
     public float temp;
 
-    public float energyMoveConsumption = .05f;
-    public float energyJumpConsumption = .8f;
-    public float motivationConsumption = .02f;
+    public float energyMoveConsumption = 0.05f;
+    public float energyJumpConsumption = 0.8f;
+    public float motivationConsumption = 0.02f;
 
     public Image enb;
     public Image mnb;
