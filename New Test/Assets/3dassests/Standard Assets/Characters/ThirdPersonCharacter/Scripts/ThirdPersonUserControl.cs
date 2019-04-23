@@ -41,6 +41,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
         }
 
+        public Vector3 GetMoveVector()
+        {
+            return this.m_Move;
+        }
+
 
         // Fixed update is called in sync with physics
         private void FixedUpdate()

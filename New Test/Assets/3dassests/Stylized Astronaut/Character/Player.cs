@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
-		private Animator anim;
-		private CharacterController controller;
+		//private Animator anim;
+		//private CharacterController controller;
 
 		public float speed = 600.0f;
 		public float turnSpeed = 400.0f;
@@ -25,11 +25,12 @@ public class Player : MonoBehaviour {
         public Slider MBar;
 
 		void Start () {
-			controller = GetComponent <CharacterController>();
-			anim = gameObject.GetComponentInChildren<Animator>();
+			//controller = GetComponent <ThirdPersonCharacter>();
+			//anim = gameObject.GetComponentInChildren<Animator>();
 		}
 
 		void Update (){
+        /*
 			if (Input.GetKey ("w")) {
 				anim.SetInteger ("AnimationPar", 1);
 			}  else {
@@ -44,25 +45,26 @@ public class Player : MonoBehaviour {
 			transform.Rotate(0, turn * turnSpeed * Time.deltaTime, 0);
 			controller.Move(moveDirection * Time.deltaTime);
 			moveDirection.y -= gravity * Time.deltaTime;
+        */
 
-        HBar.value = this.health;
-        Ebar.value = this.energy;
-        MBar.value = this.motivation;
+            HBar.value = this.health;
+            Ebar.value = this.energy;
+            MBar.value = this.motivation;
 
-        energy = energy - (energy * energyRate);
-        motivation = motivation - (motivation * motivationRate);
+            energy = energy - (energy * energyRate);
+            motivation = motivation - (motivation * motivationRate);
 
-        if(health<=0)
-        {
-            health = 0;
-            anim.SetTrigger("dead");
-            gameObject.GetComponent<Player>().enabled = false;
-        }
-        if (energy <= 0 || motivation <= 0) {
-            health = health - (deathRate * Time.deltaTime);
-        }
-        if (energy <= 0) energy = 0;
-        if (motivation <= 0) motivation = 0;
+            if(health<=0)
+            {
+                health = 0;
+                //anim.SetTrigger("dead");
+                //gameObject.GetComponent<Player>().enabled = false;
+            }
+            if (energy <= 0 || motivation <= 0) {
+                health = health - (deathRate * Time.deltaTime);
+            }
+            if (energy <= 0) energy = 0;
+            if (motivation <= 0) motivation = 0;
 
 
 
