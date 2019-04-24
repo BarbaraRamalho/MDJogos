@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 851626e16d83df74d9c134a16f3f4cb4, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &361635774
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,8 +932,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -836, y: -507.2}
-  m_SizeDelta: {x: -1672, y: -1014.5}
+  m_AnchoredPosition: {x: -762.17, y: -477.91006}
+  m_SizeDelta: {x: -1672.34, y: -1040.0201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1504978209
 MonoBehaviour:
